@@ -9,6 +9,7 @@
     {{ end }}</span>
     {{ .Content }}
   </div>
+  {{ partial "related.html" . }}
   {{ if .Site.DisqusShortname }}<div id="disqus_thread"></div>{{ end }}
 </div>
 
