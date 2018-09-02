@@ -1,4 +1,6 @@
 {{ if isset .Site.Params "highlight" }}<script src="{{ "/js/highlight.pack.js" | absURL }}"></script>
-<script>hljs.initHighlightingOnLoad();</script>{{ end }}
+<script>hljs.initHighlightingOnLoad();</script>
+{{ end }}
+{{ partial "mathjax_support.html" . }}
 </body>
 </html>
